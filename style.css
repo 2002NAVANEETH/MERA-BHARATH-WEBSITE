@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  header {
+ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+      url("../explore/background/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+  }
+  
+  nav {
+    width: 100%;
+    height: 15vh;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  
+  nav .logo {
+    width: 25%;
+    text-align: center;
+    /*background: red;*/
+  }
+  
+  nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  nav .menu a:first-child {
+    color: #00b894;
+  }
+  main {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  section h3 {
+    font-size: 50px;
+    font-weight: 35px;
+    background-image: conic-gradient(#FF9933,#FFFFFF, #138808);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  
+  section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  
+  
+.roundCardImage{
+    vertical-align: middle;
+    border-radius: 50% !important;
+    
+}
+@keyframes cardEntrance {
+    from{
+        opacity: 0;
+        transform: scale(0.3);
+        filter: hue-rotate(180deg);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+        filter: hue-rotate(0deg);
+    }
+}
+
+.card img{
+    /* width: 13rem; */
+    height: 12rem;
+    object-fit: cover;
+}
+
+.myAnimation{
+    animation: cardEntrance 500ms ease-in-out  both;
+}
+
+
+
+.card:hover{
+ 
+    transform: scale(1.1) !important;
+   
+}
+
+.bgColorBody{
+    background-color: #f6f4d2;
+}
+.bgColorAppBar{
+    background-color: #007f5f;
+}
